@@ -4,9 +4,8 @@
 
 /**
  * main - assign a random number to the variable n each time it is executed
- * print the Last digit of the number
- * stored in a variable n
- * Return: Always 0 (Success)
+ * print the Last digit in a variable n
+ * Return: 0
  */
 
 int main(void)
@@ -21,16 +20,15 @@ int main(void)
 	printf("Last digit of %d is %d ", n, x);
 	if (x > 5)
 	{
-		printf("and is greater than 5");
+		printf("and is greater than 5\n");
 	}
 	if (x == 0)
 	{
-		printf("and is zero");
+		printf("and is 0\n");
 	}
 	if (x < 6 && x != 0)
 	{
-		printf("and is less than 6 and is not 0");
+		printf("and is less than 6 and not 0");
 	}
-	printf("\n");
 	return (0);
 }
