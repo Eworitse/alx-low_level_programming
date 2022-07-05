@@ -5,13 +5,13 @@
  * followed by new line
  */
 
-void print_alphabet(void);
+void print_alphabet (void)
 {
-	int i;
+	int j;
 
-	for (i = 'a'; i <= 'z'; i++)
+	for (j = 'a'; j <= 'z'; j++)
 	{
-		_putchar(i);
+		_putchar(j);
 	}
 	_putchar('\n');
 }
