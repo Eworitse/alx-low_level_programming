@@ -1,46 +1,26 @@
 #include "main.h"
 
-
 /**
- * cap_string - capitalies all wordsof a string
- * @s: pointer to char
- *
- * Return: char
+ * cap_string -> capitalization function
+ * @x: string param
+ * Return: capitalized version of the string
  */
-
-char *cap_string(char *s)
+char *cap_string(char *x)
 {
-	int i = 0;
+	char spc[] = {32, 9, '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+	int len = 13;
+	int a = 0, i;
 
-	while (*(s + 1) != '\0')
+	while (x[a])
 	{
-		if (i == 0 && (*(s + i) >= 97 && *(s + i) <= 122))
+		i = 0;
+		while (i < len)
 		{
-			*(s + i) = *(s + i) - ' ';
-		}
-		if (*(s + i) == ' '
-				|| *(s + i) == '\n'
-				|| *(s + i) == '\t'
-				|| *(s + i) == ','
-				|| *(s + i) == ';'
-				|| *(s + i) == '!'
-				|| *(s + i) == '?'
-				|| *(s + i) == '"'
-				|| *(s + i) == '('
-				|| *(s + i) == ')'
-				|| *(s + i) == '{'
-				|| *(s + i) == '}'
-				|| *(s + i) == '.'
-				)
-		{
+			if ((a == 0 || x[a - 1] == spc[i]) && (x[a] >= 97 && x[a] <= 122))
+				x[a] = x[a] - 32;
 			i++;
-			if (*(s + i) >= 97 && *(s + i) <= 122)
-			{
-				*(s + i) = *(s + i) - ' ';
-			}
 		}
-		else
-			i++;
+		a++;
 	}
-	return (s);
+	return (x);
 }
