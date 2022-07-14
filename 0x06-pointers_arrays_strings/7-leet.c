@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
- * leet -  encodes string into 1337
- * @x: pointer to char
- * Return: char
+ * leet -> a leet function
+ * @x: param x
+ * Return: a string
  */
-
 char *leet(char *x)
 {
 	int a = 0, b, l = 5;
@@ -16,7 +15,7 @@ char *leet(char *x)
 	{
 		b = 0;
 
-		while (b < 1)
+		while (b < l)
 		{
 			if (x[a] == tr[b] || x[a] - 32 == tr[b])
 				x[a] = trw[b];
