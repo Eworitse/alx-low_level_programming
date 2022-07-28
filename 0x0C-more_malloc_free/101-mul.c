@@ -85,7 +85,7 @@ int check_for_digits(char **av)
 
 /**
  * init - initializes a string
- * str - initialized char string
+ * @str: initialized string
  * @l: length of string
  * Return: void
  */
