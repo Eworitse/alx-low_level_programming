@@ -30,10 +30,9 @@ listint_t *find_listint_loop_pl(listint_t *head)
 /**
  * print_listint_safe - prints a linked list, even if it
  * has a loop
- *  
- *  @head: head of list to print
+ * @head: head of list to print
  *
- *  Return: number of nodes printed
+ * Return: number of nodes printed
  */
 
 size_t print_listint_safe(const listint_t *head)
