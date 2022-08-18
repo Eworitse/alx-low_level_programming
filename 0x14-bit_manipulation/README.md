@@ -5,4 +5,5 @@ this is the readme file containing the description for 0x14. C - Bit manipulatio
 3- a function that sets the value of a bit to 1 at a given index.
 4- a function that sets the value of a bit to 0 at a given index.
 5- a function that returns the number of bits you would need to flip to get from one number to another.
-
+6-  a function that checks the endianness.
+7-  the password for this program{LINKED}.
